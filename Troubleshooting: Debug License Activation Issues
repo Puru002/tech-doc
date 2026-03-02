@@ -1,0 +1,27 @@
+
+---
+
+# Document 2 — Troubleshooting: Debug License Activation Issues
+
+```markdown
+# Troubleshooting License Activation Issues
+
+## Overview
+
+If license activation fails, the issue is typically related to connectivity, DNS resolution, firewall rules, or proxy configuration.
+
+Carbonio licensing requires outbound HTTPS communication with the Zextras licensing API.
+
+| Endpoint | api.zextras.io |
+|---|---|
+| Protocol | HTTPS |
+| Port | TCP 443 |
+
+---
+
+## Step 1 — Verify DNS Resolution
+
+Check that the server can resolve the licensing endpoint.
+
+```bash
+nslookup api.zextras.io
