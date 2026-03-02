@@ -1,0 +1,46 @@
+# How to Activate a Carbonio License
+
+## Overview
+
+Carbonio requires a valid subscription license issued by Zextras to unlock enterprise features and enforce subscription limits.  
+Each installation must be activated using a **license token** provided by Zextras.
+
+During activation, the Carbonio server securely communicates with the Zextras licensing API.
+
+| Parameter | Value |
+|---|---|
+| Endpoint | https://api.zextras.io |
+| Protocol | HTTPS |
+| Port | TCP 443 |
+| Direction | Outbound |
+
+The server sends the license token and system information and receives a **digital license file** enabling the purchased features.
+
+---
+
+## Prerequisites
+
+Before activating the license, ensure the following:
+
+- Carbonio installation is complete
+- The system has **internet connectivity**
+- Outbound access to `api.zextras.io` on **TCP port 443**
+- A valid **license token** from Zextras
+
+Only the **Mailstore / Provisioning node** requires access to the licensing endpoint.
+
+---
+
+## Activation Methods
+
+License activation can be performed using:
+
+- Carbonio **Admin Panel**
+- Carbonio **Command Line Interface (CLI)**
+
+---
+
+## Method 1 — Activate License via Admin Panel
+
+1. Log in to the **Carbonio Admin Panel**.
+2. Navigate to:
